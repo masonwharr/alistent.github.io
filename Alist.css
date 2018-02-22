@@ -156,6 +156,7 @@ ul{
 	position:absolute;
 	top:25%;
 	left:52%;
+	margin-right:10px;
 	border:solid #bcbcbc 2px;
 }
 
@@ -224,7 +225,7 @@ display:inline-block;
 }
 .navDate{
 	display:inline-block;
-	margin-left:15px;
+	left:5%;
 	position: absolute;
 	top:5%;
 }
@@ -378,4 +379,63 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+}
+
+@media screen and (max-width:1260px){
+	.eventsBox{
+	height:210px;
+	width:385px;
+	position:relative;
+	top:5%;
+	left:7.5%;
+	border:solid #bcbcbc 2px;
+}
+
+.projectsBox{
+	height:97px;
+	width:345px;
+	position:relative;
+	top:15%;
+	left:50%;
+	margin-left:-358px;
+		border:solid #bcbcbc 2px;
+}
+.tasksBox{
+	height:495px;
+	width:405px;
+	position:absolute;
+	top:25%;
+	left:52%;
+	margin-right:10px;
+	border:solid #bcbcbc 2px;
+}
+.tasksTab{
+	width:100%;
+	background-color: #2787c9;
+	padding-bottom:5px;
+	margin-top:-6%;
+	height:35px;
+	cursor:pointer;
+	text-align:center;
+}
+.sliderBox{
+	position:absolute;
+	left:83%;
+	margin-top:10px;
+	display:inline-block;
+
+}
+.eventDetails2{
+	position:relative;
+	left:55%;
+	top:1%;
+	display: inline-block;
+}
+.navDate{
+	display:inline-block;
+	left:8%;
+	position: absolute;
+	top:5%;
+}
+
 }
