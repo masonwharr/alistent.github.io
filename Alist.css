@@ -1,0 +1,381 @@
+.navPanel{
+	height:100%;
+	width:245px;
+	background-color:white;
+			border-right:1px solid lightgrey;
+			display:inline-block;
+			position: absolute;
+			z-index: 3;
+
+}
+body{
+	width:100%;
+	height:100%;
+}
+html,body{
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+*{
+}
+.infoBox{
+	width:100%;
+	height:150px;
+		border-bottom:1px solid lightgrey;
+}
+.nameBox{
+	height:60px;
+	margin:0px;
+	margin-left:20px;
+		font: 300 1.0em/1.3em 'Mukta Malar';
+
+}
+.panelContainer{
+	width:230px;
+	height:100%;
+		border-right:1px solid lightgrey;
+		position: absolute;
+}
+.logo{
+	height:90px;
+	margin-top:10px;
+}
+.tabText{
+margin-left:10px;
+display:inline-block;
+position:absolute;
+	font: 600 1.0em/1.3em 'Mukta Malar';
+	color:#5e6163;
+}
+.tabPic{
+	margin-left:10px;
+	margin-top:13px;
+display:inline-block;
+}
+.tabPicPS{
+	margin-left:7px;
+	margin-top:10px;
+display:inline-block;
+}
+#logoPic{
+	left:50%;
+	position:relative;
+	margin-left:-62.5px;
+}
+#navDate{
+	margin-top:-2.5px;
+	display:inline-block;
+		font: 300 1.0em/1.3em 'Mukta Malar';
+		font-size: 18px;
+		color:grey;
+
+}
+#navName{
+	margin-top: 0px;
+	display:inline-block;
+	margin-bottom:-2.5px;
+		font: 600 1.5em/1.5em 'Mukta Malar';
+		font-size: 19px;
+		color:#888;
+
+}
+.panelTabs{
+	height:655px;
+	width:100%;
+	display:inline-block;
+	border-right:1px solid lightgrey;
+}
+.tab{
+	width:100%;
+	height:50px;
+	cursor:pointer;
+}
+.tab:hover{
+	background-color:#d9e9f5;
+}
+.main{
+	width:100%;
+	height:100%;
+	background-color:#f5f5f5;
+		display:inline-block;
+	padding:0px;
+	position: absolute;
+	border-left: solid lightgrey 1px;
+}
+.mainNav{
+	width:100%;
+	height:160px;
+	background-color:white;
+	margin-top:0px;
+	border-bottom:1px solid lightgrey;
+	font: 600 1.5em/1.3em 'Mukta Malar';
+	color:#548dc8;
+	font-size:28px;
+}
+.mainContainer{
+	width:83%;
+	height:100%;
+		position: absolute;
+		position:relative;
+		left:17%;
+		margin
+}
+ul{
+	padding:0px;
+	display:inline-block;
+}
+.container{
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	outline:solid red 1px;
+}
+.eventsBox{
+	height:210px;
+	width:495px;
+	position:relative;
+	top:5%;
+	left:4%;
+	border:solid #bcbcbc 2px;
+}
+
+.projectsBox{
+	height:97px;
+	width:420px;
+	position:relative;
+	top:15%;
+	left:50%;
+	margin-left:-478px;
+		border:solid #bcbcbc 2px;
+}
+.tasksBox{
+	height:495px;
+	width:495px;
+	position:absolute;
+	top:25%;
+	left:52%;
+	border:solid #bcbcbc 2px;
+}
+
+.eventsTab{
+	width:100%;
+	background-color: #a5c13e;
+	padding-bottom:0px;
+	height:35px;
+	text-align:center;
+	cursor:pointer;
+}
+.projectsTab{
+	width:100%;
+	background-color: #a5c13e;
+	padding-bottom:0px;
+	height:35px;
+	text-align:center;
+	cursor:pointer;
+
+}
+.eventTime{
+	margin:0px;
+	font-size:20px;
+	margin-top:5px;
+}
+.projectsTabText{
+font: 400 1.5em/1.3em 'Mukta Malar';
+position:relative;
+top:-90%;
+color:white;
+display:inline-block;
+}
+.eventsTabText{
+font: 400 1.5em/1.3em 'Mukta Malar';
+margin-top: 4px;
+color:white;
+display:inline-block;
+}
+.event{
+	font: 400 .8em/1.3em 'Mukta Malar';
+	width:100%;
+	height:56.5px;
+	background-color:white;
+	border-top:solid #eaeaea 1px;
+	border-bottom:solid #eaeaea 1px;
+}
+.eventName{
+	font: 600 1.5em/1.3em 'Mukta Malar';
+	margin:0px;
+}
+.eventDate{
+		font: 300 1.1em/1.3em 'Mukta Malar';
+		margin:0px;
+}
+.eventDetails{
+	position:relative;
+	left:10%;
+	top:10%;
+	display: inline-block;
+}
+.eventDetails2{
+	position:relative;
+	left:60%;
+	top:1%;
+	display: inline-block;
+}
+.navDate{
+	display:inline-block;
+	margin-left:15px;
+	position: absolute;
+	top:5%;
+}
+.nameTabs:hover{
+		-webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+.navDateText{
+	display:inline-block;
+}
+.project{
+	font: 400 .8em/1.3em 'Mukta Malar';
+	width:100%;
+	height:55px;
+	background-color:white;
+	border-top:solid #eaeaea 1px;
+	border-bottom:solid #eaeaea 1px;
+}
+.projectName{
+	font: 600 1.5em/1.3em 'Mukta Malar';
+	margin:0px;
+}
+.projectDate{
+		font: 300 1.1em/1.3em 'Mukta Malar';
+		margin:0px;
+}
+.projectDetails{
+	position:relative;
+	left:10%;
+	top:10%;
+	margin-top: 5px;
+	display: inline-block;
+}
+.task{
+	font: 400 .8em/1.3em 'Mukta Malar';
+	width:100%;
+	height:55px;
+	background-color:white;
+	border-top:solid #eaeaea 1px;
+	border-bottom:solid #eaeaea 1px;
+}
+.tasksName{
+	font: 600 1.5em/1.3em 'Mukta Malar';
+	margin:0px;
+}
+.tasksDate{
+		font: 300 1.1em/1.3em 'Mukta Malar';
+		margin:0px;
+}
+.tasksDetails{
+	position:relative;
+	left:10%;
+	top:10%;
+	display: inline-block;
+}
+.slider{
+	position:absolute;
+	left:85%;
+	top:19%;
+	display: inline-block;
+}
+.eventStart{
+font: 400 2em/1.3em 'Mukta Malar';
+margin:0px;
+}
+.eventEnd{
+	margin:0px;
+}
+.tasksTab{
+	width:100%;
+	background-color: #2787c9;
+	padding-bottom:5px;
+	margin-top:-5%;
+	height:35px;
+	cursor:pointer;
+	text-align:center;
+}
+.tasksTabText{
+font: 400 1.5em/1.3em 'Mukta Malar';
+position:relative;
+top:25%;
+color:white;
+}
+.projectsTab{
+	width:100%;
+	background-color: #f5a623;
+	padding-bottom:5px;
+	height:35px;
+	text-align:center;
+}
+.projectsTabText{
+font: 400 1.5em/1.3em 'Mukta Malar';
+position:relative;
+top:25%;
+color:white;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius:5px;
+  background-color: #d0011d;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.sliderBox{
+	position:absolute;
+	left:85%;
+	margin-top:10px;
+	display:inline-block;
+
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 32px;
+  left: 4px;
+    border-radius:5px;
+    	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #9ec00f;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #9ec00f;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
