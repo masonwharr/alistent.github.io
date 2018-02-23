@@ -383,7 +383,7 @@ display:inline-block;
 }
 .eventDetails{
 	position:relative;
-	left:10%;
+	left:5%;
 	top:10%;
 	display: inline-block;
 }
@@ -425,7 +425,7 @@ display:inline-block;
 }
 .projectDetails{
 	position:relative;
-	left:10%;
+	left:5%;
 	top:10%;
 	margin-top: 5px;
 	display: inline-block;
