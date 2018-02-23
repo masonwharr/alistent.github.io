@@ -74,7 +74,7 @@ display:inline-block;
 	position: absolute;
 	display: inline-block;
 left:64%;
-top:5%;
+top:6.5%;
 font: 300 1.12em/1.3em 'Mukta Malar';
 }
 .tempToday{
@@ -253,7 +253,7 @@ top:-10px;
 }
 .mainNav{
 	width:100%;
-	height:160px;
+	height:170px;
 	background-color:white;
 	margin-top:0px;
 	border-bottom:1px solid lightgrey;
@@ -267,6 +267,30 @@ top:-10px;
 		position: absolute;
 		position:relative;
 		left:17%;
+}
+.toolBar{
+	height:42px;
+	width:100%;
+	position:fixed;
+	background-color:#f5f5f5;
+}
+.icons{
+	position: relative;
+	left:70%;
+	height:20px;
+	width:145px;
+		display: inline-block;
+	margin:0px;
+	margin-top:10px;
+}
+.icon{
+	display: inline-block;
+	margin:0px;
+	margin-left:35px;
+	cursor:pointer;
+}
+.addPic{
+		margin-left:25px;
 }
 ul{
 	padding:0px;
@@ -486,7 +510,7 @@ color:white;
   right: 0;
   bottom: 0;
   border-radius:5px;
-  background-color: #d0011d;
+  background-color:#9ec00f;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -500,25 +524,25 @@ color:white;
 .slider:before {
   position: absolute;
   content: "";
-  height: 32px;
-  width: 32px;
-  left: 4px;
+  height: 31px;
+  width: 31px;
+  left: 1px;
     border-radius:5px;
     	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  bottom: 1px;
+  bottom: 1.5px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #9ec00f;
+  background-color:#d0011d;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #9ec00f;
+  box-shadow: 0 0 1px #d0011d;
 }
 
 input:checked + .slider:before {
