@@ -5,7 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Mukta+Malar:300,400,600,700" rel="stylesheet">
-  <link href="Alist.css" type="text/css" rel="stylesheet">
+  <link href="Alist-concept.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="dcalendar.picker.css" rel="stylesheet">
+  <script src="dcalendar.picker.js"></script>
+
+    <script src="clndr.js"></script>
+      <script src="testing.js"></script>
     <title>title</title>
   </head>
   <body>
@@ -42,7 +48,7 @@
 </div>
   </div>
  <div class="mainNav">
-<div class="navDate">
+<div class="mainNavDate">
 <p class="navDateText">Monday January 19, 2018</p>
 </div>
 <div class="mainTemp">
@@ -67,8 +73,10 @@
 </div>
  </div>
   <div class="eventsBox">
+     <h3 class="tasksName">Events</h3>
+     <div class="eventsContainer">
   <div class="nameTabs eventsTab">
-  <p class="eventsTabText">Add An Event</p>
+  <p class="eventsTabText">+ Add An Event</p>
   </div>
   <div class="event">
   <div class="eventDetails">
@@ -100,10 +108,18 @@
      <p class="eventTime">1am</p>
   	</div>
   </div>
+  </div>
+ </div>
+ <div class="calendarBox">
+ <div id="calendar-demo">
+
+ </div>
  </div>
    <div class="projectsBox">
+      <h3 class="tasksName"> Projects</h3>
+      <div class="projectsContainer">
     <div class="nameTabs projectsTab">
-  <span class="projectsTabText">Add A Project</span>
+  <span class="projectsTabText">+ Add A Project</span>
   </div>
    <div class="project">
   <div class="projectDetails">
@@ -111,10 +127,13 @@
   	<p class="projectDate">Date</p>
   	</div>
   </div>
+  </div>
  </div>
    <div class="tasksBox">
+   <h3 class="tasksName"> Tasks</h3>
+   <div class="tasksContainer">
     <div class="nameTabs tasksTab">
-  <p class="tasksTabText">Add A Task</p>
+  <p class="tasksTabText">+ Add A Task</p>
   </div>
    <div class="task">
   <div class="tasksDetails">
@@ -211,6 +230,7 @@
   <span class="slider"></span>
 </label>
   	</div>
+  </div>
   </div>
  </div>
 
