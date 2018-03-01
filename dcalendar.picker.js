@@ -487,9 +487,18 @@ if (typeof jQuery === 'undefined') { throw new Error('DCalendar.Picker: This plu
 			}
 
 			that.on('click', function (e) {
+if (that[0].className == "slide"){
+	
+				console.log('tab');
+
+}
+		else{
+
+
 				var cal = that.data(DCAL_DATA);
 				cal.show();
 				this.blur();
+}
 			}).on('dateselected', function (e) {
 				var cal = that.data(DCAL_DATA);
 				that.val(e.date).trigger('onchange');
