@@ -1,17 +1,24 @@
 $(document).ready(function() {
 	var removeThese = [];
 	var overdueTasks = ["lllll", "lll"];
-var overdue = overdueTasks.length;
+	var overdue = overdueTasks.length;
+	// This goes through each task details and helps decide if it needs a status bar or not.
 	$('.tasksDetails').each(function() {
-var theTab = $(this);
-	var theTabSlide = theTab[0].nextElementSibling;
-	var theTabRule = $(theTabSlide).find('.slider');
-	var theTabColor = ($(theTabRule).css("background-color"));
+		var theTab = $(this);
+		var amount = $(this)[0].dataset.complex;
+		var theTabSlide = theTab[0].nextElementSibling;
+		var theTabRule = $(theTabSlide).find('.slider');
+		var theTabColor = ($(theTabRule).css("background-color"));
 		console.log(theTabColor);
-	
-		$(this).html('<div class="tasksDetailsBox" style="padding-left: 8px; border-left: 4px solid ' + theTabColor + '">' + '<p class="tasksName">' + 'Pick up groceries' + '</p>' + '<p class="tasksDate">' + 'Date' + '</p>' + '</div>');
-
-});
+		// The complex attribute is what contains the amount of subtasks an item has. If it more than 0, this takes away the status bar, and line 55 is where it adds the grey circle.
+		if (amount > 0) {
+			$(this).html('<div class="tasksDetailsBox">' + '<p class="tasksName">' + 'Pick up groceries' + '</p>' + '<p class="tasksDate">' + 'Date' + '</p>' + '</div>');
+		}
+		//this is for if it is 0 and needs to have a status bar.
+		else { //right here, just put in a variable for the title. Not groceries.
+			$(this).html('<div class="tasksDetailsBox" style="padding-left: 8px; border-left: 4px solid ' + theTabColor + '">' + '<p class="tasksName">' + 'Pick up groceries' + '</p>' + '<p class="tasksDate">' + 'Date' + '</p>' + '</div>');
+		}
+	});
 	/*$('.slider').each(function() {
 		var sliderColor = $(this).css("background-color");
 		//var sliderData = $(this).dataset.bg;
@@ -19,7 +26,7 @@ var theTab = $(this);
 
 	});*/
 	$('.overdueBox').html('<p class="overdueText">' + 'You have ' + overdue + ' OVERDUE TASKS. </p>');
-	if (overdue == 0){
+	if (overdue == 0) {
 		$('.overdueBox').remove();
 	}
 	$('span[data-date]').each(function() {
@@ -39,6 +46,13 @@ var theTab = $(this);
 			setTimeout(function() {
 				$('.switch').css("pointer-events", "auto");
 			}, 1000);
+		}
+	});
+	//This goes theough each task and if it has more than 0 subtasks it adds the circle with the number.
+	$('.task').each(function() {
+		var amount = $(this)[0].dataset.complex;
+		if (amount > 0) {
+			$(this).prepend('<div class="complexBox">' + '<p class="complexText">' + amount + '</p>' + '</div>');
 		}
 	});
 });
