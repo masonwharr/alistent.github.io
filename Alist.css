@@ -30,7 +30,6 @@ html, body {
 }
 .boxHolder {
 	width: 100%;
-	outline: solid red 1px;
 	height: 610px;
 	display: flex;
 	justify-content: space-between;
