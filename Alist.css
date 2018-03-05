@@ -306,7 +306,7 @@ ul {
 .eventsBox {
 	height: 210px;
 	width: 375px;
-	top: 40px;
+	top: 20px;
 	position: relative;
 	margin-left: 20px;
 	/*left:50%;
@@ -316,7 +316,7 @@ ul {
 	width: 260px;
 	height: 200px;
 	position: relative;
-	top: 40px;
+	top: 20px;
 	/*left:50%;
 	margin-left:-540px;*/
 	text-align: center;
@@ -340,7 +340,7 @@ ul {
 	height: 495px;
 	width: 375px;
 	position: relative;
-	top: 40px;
+	top: 20px;
 	margin-right: 20px;
 	/*left:65%;
 	margin-right:10px;*/
