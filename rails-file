@@ -1,0 +1,160 @@
+<div class="container">
+      <div class="navPanel">
+        <div class="infoBox">
+          <div class="logo">
+            <%= image_tag("a-list-logo.png", id: "logoPic") %>
+          </div>
+          <div class="nameBox">
+            <h3 id="navName"><b>John Smith Jr.</b></h3>
+            <h3 id="navDate">January 14, 2018</h3>
+          </div>
+        </div>
+        <div class="panelTabs">
+          <div class="tab dash">
+            <div class="tabPic">
+              <%= image_tag("today.png") %>
+            </div>
+            <p class="tabText dashText">Dashboard</p>
+          </div>
+          <div class="tab contacts">
+            <div class="tabPic">
+              <%= image_tag("contacts.png") %>
+            </div>
+            <p class="tabText contactsText">Contacts</p>
+          </div>
+          <div class="tab events">
+            <div class="tabPic">
+              <%= image_tag("events.png") %>
+            </div>
+            <p class="tabText eventsText">Events</p>
+          </div>
+          <div class="tab tasks">
+            <div class="tabPic">
+              <%= image_tag("tasks.png") %>
+            </div>
+            <p class="tabText tasksText">Tasks</p>
+          </div>
+          <div class="tab notes">
+            <div class="tabPic">
+              <%= image_tag("notes.png") %>
+            </div>
+            <p class="tabText notesText">Notes</p>
+          </div>
+          <div class="tab passwords">
+            <div class="tabPicPS">
+              <%= image_tag("ps.png") %>
+            </div>
+            <p class="tabText passwordsText">Passwords</p>
+          </div>
+          <div class="tab projects">
+            <div class="tabPic">
+              <%= image_tag("projects.png") %>
+            </div>
+            <p class="tabText projectsText">Projects</p>
+          </div>
+          <div class="tab logout">
+            <div id="apple-sign-out-button"></div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="toolBar">
+          <div class="icons">
+            <div class="icon searchPic">
+              <%= image_tag("search.png") %>
+            </div>
+            <div class="icon addPic">
+              <%= image_tag("add.png") %>
+            </div>
+            <div class="icon dotsPic">
+              <%= image_tag("dots.png") %>
+            </div>
+          </div>
+        </div>
+        <div class="mainNav">
+          <div class="navDate">
+            <p class="navDateText">Monday January 19, 2018</p>
+          </div>
+          <div class="mainTemp">
+            <div class="tempToday">
+              <h3 class="tempOne">12<span id="symbol">°</span></h3><br>
+              <p id="place">Columbus Ohio</p><br>
+              <p id="desc">Mostly cloudy</p>
+            </div>
+            <div class="tempTwo">
+              <p class="tempTwoDay">Tues</p><%= image_tag("cloud.png", class: "tempTwoPic", alt: "cloud") %>
+              <div class="tempTwoText">
+                12<span id="daySymbol">°</span>
+              </div>
+            </div>
+            <div class="tempThree">
+              <p class="tempThreeDay">Weds</p><%= image_tag("sun.png", class: "tempThreePic", alt: "sun") %>
+              <div class="tempThreeText">
+                20<span id="daySymbol">°</span>
+              </div>
+            </div>
+            <div class="tempFour">
+              <p class="tempFourDay">Thur</p><%= image_tag("sun.png", class: "tempFourPic", alt: "sun") %>
+              <div class="tempFourText">
+                14<span id="daySymbol">°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxHolder">
+        <div class="calendarBox">
+       <div id="calendar-demo">
+
+       </div>
+       </div>
+        <div class="eventsBox">
+          <div class="nameTabs eventsTab">
+            <p class="eventsTabText">Add An Event</p>
+          </div>
+          <div class="event">
+            <div class="eventDetails">
+              <p class="eventName">Cheri Workout</p>
+              <p class="eventDate">Date</p>
+            </div>
+            <div class="eventDetails2">
+              <p class="eventTime">5am</p>
+              <p class="eventTime">10pm</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="eventDetails">
+              <p class="eventName">Cheri Workout</p>
+              <p class="eventDate">Date</p>
+            </div>
+            <div class="eventDetails2">
+              <p class="eventTime">9am</p>
+              <p class="eventTime">10am</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="eventDetails">
+              <p class="eventName">Cheri Workout</p>
+              <p class="eventDate">Date</p>
+            </div>
+            <div class="eventDetails2">
+              <p class="eventTime">7am</p>
+              <p class="eventTime">1am</p>
+            </div>
+          </div>
+        </div>
+        <div class="tasksBox">
+          <div class="nameTabs tasksTab">
+            <p class="tasksTabText">Add A Task</p>
+          </div>
+          <div class="overdueTasksBox">
+          </div>
+          <div class="overdueBox">
+          </div>
+          <div class="pinnedTasks">
+          </div>
+          <div class="todayTasks">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
