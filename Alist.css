@@ -4,7 +4,8 @@
 	background-color: white;
 	border-right: 1px solid lightgrey;
 	display: inline-block;
-	position: absolute;
+	position: relative;
+	float: left;
 	z-index: 3;
 }
 body {
@@ -15,6 +16,7 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
+	min-height: 100%;
 }
 * {}
 .infoBox {
@@ -32,14 +34,18 @@ html, body {
 	width: 100%;
 	height: 610px;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 0px;
 }
 .panelContainer {
 	width: 225px;
 	height: 100%;
 	border-right: 1px solid lightgrey;
-	position: absolute;
+	position: relative;
+	float: left;
 }
 .logo {
 	height: 90px;
@@ -75,8 +81,8 @@ html, body {
 	height: 105px;
 	position: absolute;
 	display: inline-block;
-	left: 64%;
-	top: 6.5%;
+	left: 75%;
+	top: 5.5%;
 	font: 300 1.12em/1.3em 'Mukta Malar';
 }
 .tempToday {
@@ -242,7 +248,8 @@ html, body {
 	background-color: #fafafa;
 	display: inline-block;
 	padding: 0px;
-	position: absolute;
+	position: relative;
+	float: left;
 }
 .mainNav {
 	width: 100%;
@@ -253,12 +260,6 @@ html, body {
 	font: 600 1.5em/1.3em 'Mukta Malar';
 	color: #2786ca;
 	font-size: 28px;
-}
-.mainContainer {
-	width: 83%;
-	height: 100%;
-	position: relative;
-	left: 16.5%;
 }
 .toolBar {
 	height: 42px;
@@ -293,6 +294,8 @@ ul {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
+	display: flex;
+	height: 100%;
 }
 .eventsContainer {
 	border: solid #bcbcbc 2px;
@@ -305,23 +308,28 @@ ul {
 }
 .eventsBox {
 	height: 210px;
-	width: 375px;
 	top: 20px;
 	position: relative;
-	margin-left: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	flex-basis: 650px;
+	flex-grow: 1;
+	flex-shrink: 1;
 	/*left:50%;
 	margin-left:-235px;*/
 }
 .calendarBox {
-	width: 260px;
+	flex-basis: 260px;
+	flex-grow: 1;
+	flex-shrink: 1;
 	height: 200px;
 	position: relative;
+	float: left;
 	top: 20px;
-	/*left:50%;
-	margin-left:-540px;*/
 	text-align: center;
 	background-color: white;
 	margin-left: 20px;
+	margin-right: 10px;
 }
 #dummyText {
 	vertical-align: middle;
@@ -329,8 +337,6 @@ ul {
 .projectsBox {
 	height: 100px;
 	width: 320px;
-	/*	left:50%;
-	margin-left:-540px;*/
 	clear: both;
 	position: relative;
 	margin-top: -100px;
@@ -338,10 +344,13 @@ ul {
 }
 .tasksBox {
 	height: 495px;
-	width: 375px;
+	flex-basis: 650px;
+	flex-grow: 1;
+	flex-shrink: 1;
 	position: relative;
 	top: 20px;
 	margin-right: 20px;
+	margin-left: 10px;
 	/*left:65%;
 	margin-right:10px;*/
 }
@@ -704,91 +713,49 @@ input:checked+.slider:before {
 	-webkit-transition: .4s;
 	transition: .4s;
 }
-@media screen and (max-width:1320px) {
-	.eventsBox {
-		width: 330px;
-	}
-	.calendarBox {
-		margin-left: 50px;
-	}
-	.projectsBox {}
-	.tasksBox {
-		width: 330px;
-	}
-}
-@media screen and (max-width:1240px) {
-	.eventsBox {
-		width: 530px;
-		margin-right: 50px;
-	}
-	.calendarBox {
-		margin-left: 50px;
-	}
-	.projectsBox {
-		top: 200px;
-		margin-right: 75px;
-	}
-	.tasksBox {
-		width: 330px;
-		top: 80px;
-		left: 50px;
-	}
-	.tasksBtnText {
-		margin-left: -125px;
-	}
-	.boxHolder {
-		margin: 0px;
-		padding: 0px;
-		height: 920px;
-	}
-	.main {
-		height: 1150px;
-	}
-	.navPanel {
-		height: 1150px;
-	}
+@media screen and (max-width:1680px) {
 	.mainTemp {
-		top: 4%;
-		left: 55%;
+		left: 70%;
 	}
-	.mainNavDate {
-		display: inline-block;
-		left: 10%;
-		position: relative;
-		top: 55%;
+	@media screen and (max-width:1480px) {
+		.mainTemp {
+			left: 65%;
+		}
 	}
-}
-@media screen and (max-width:1150px) {
-	.eventsBox {
-		width: 400px;
-		margin-right: 50px;
+	@media screen and (max-width:1380px) {
+		.mainTemp {
+			left: 60%;
+		}
 	}
-	.calendarBox {
-		margin-left: 80px;
+	@media screen and (max-width:1240px) {
+		.tasksBox {
+			flex-basis: 100%;
+			/*left:65%;
+	margin-right:10px;*/
+		}
+		.mainTemp {
+			left: 38%;
+		}
+		.mainNavDate {
+			font-size: 20px;
+		}
+		.eventsBox {
+			margin-bottom: 70px;
+			margin-top: 70px;
+			flex-basis: 100%;
+		}
+		.boxHolder {
+			flex-wrap: wrap;
+		}
+		.calendarBox {
+			position: relative;
+			top: 20px;
+			left: 50%;
+			flex: none;
+			margin-left: -142px;
+			display: inline-block;
+			text-align: center;
+			background-color: white;
+			margin-right: 10px;
+		}
 	}
-	.tasksBox {
-		width: 330px;
-		top: 80px;
-		left: 80px;
-	}
-}
-@media screen and (max-width:1060px) {
-	.eventsBox {
-		width: 350px;
-		margin-right: 30px;
-	}
-	.calendarBox {
-		margin-left: 80px;
-	}
-	.tasksBox {
-		width: 330px;
-		top: 80px;
-		left: 80px;
-	}
-	.projectsBox {
-		width: 280px;
-	}
-	.projectsBtnText {
-		margin-left: -95px;
-	}
-}
