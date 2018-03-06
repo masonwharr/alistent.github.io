@@ -52,7 +52,12 @@ $(document).ready(function() {
 	$('.task').each(function() {
 		var amount = $(this)[0].dataset.complex;
 		if (amount > 0) {
-			$(this).prepend('<div class="complexBox">' + '<p class="complexText">' + amount + '</p>' + '</div>');
+			$(this).prepend('<div class="complexBox upBox">' + '<p class="complexText">' + amount + '</p>' + '<i class="fa fa-angle-down">' + '</i>' + '</div>');
 		}
+	});
+	$('.complexBox').click(function() {
+		var boxParents = $(this).parent();
+		var amount = $(boxParents)[0].dataset.complex;
+		$(this).toggleClass('blueBg');
 	});
 });
